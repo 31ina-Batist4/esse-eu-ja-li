@@ -1,0 +1,68 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "É Assim que Acaba:",
+      "author": "Colleen Hoover",
+       "img": "/assets/images/coisas.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Antes que o café esfrie",
+      "author": "Toshikazu Kawaguchi",
+       "img": "/assets/images/cafe.jpg"
+    },
+    {"id": 3,
+      "title": "O sol é para todos",
+      "author": "Harper Lee",
+       "img":"/assets/images/sol.jpg"
+    },
+    {"id": 4,
+      "title": "O Homem de Giz",
+      "author": "C. J. Tudor",
+       "img": "/assets/images/giz.jpg"
+    },
+    {"id": 5,
+      "title": "É Assim que Acaba:",
+      "author": "Colleen Hoover",
+       "img": "/assets/images/assim_.jpg"
+    },
+    {"id": 6,
+      "title": "O poder do silêncio",
+      "author": "Eckhart Tolle",
+       "img": "/assets/images/silencio.jpg"
+    },
+    {
+      "id": 7,
+      "title": "É Assim que Acaba:",
+      "author": "Colleen Hoover",
+       "img": "/assets/images/coisas.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Antes que o café esfrie",
+      "author": "Toshikazu Kawaguchi",
+       "img": "/assets/images/cafe.jpg"
+    },
+    {"id": 9,
+      "title": "O sol é para todos",
+      "author": "Harper Lee",
+       "img":"/assets/images/sol.jpg"
+    },
+    {"id": 10,
+      "title": "O Homem de Giz",
+      "author": "C. J. Tudor",
+       "img": "/assets/images/giz.jpg"
+    },
+    {"id": 11,
+      "title": "É Assim que Acaba:",
+      "author": "Colleen Hoover",
+       "img": "/assets/images/assim_.jpg"
+    },
+    {"id": 12,
+      "title": "O poder do silêncio",
+      "author": "Eckhart Tolle",
+       "img": "/assets/images/silencio.jpg"
+    }
+  ]
+}
