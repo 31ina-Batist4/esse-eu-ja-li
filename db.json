@@ -1,68 +1,212 @@
 {
+  "users": [
+    {
+      "id": 0,
+      "name": "Elina",
+      "email": "elinabatista@gmail.com",
+      "password": "Ln!12345",
+      "pontos": 1,
+      "trofeus": [],
+      "books": [
+        {
+          "id": 5,
+          "title": "É Assim que Acaba:",
+          "author": "Colleen Hoover",
+          "pages": 368,
+          "summary": "Em É assim que acaba, Colleen Hoover nos apresenta Lily, uma jovem que se mudou de uma cidadezinha do Maine para Boston, se formou em marketing e abriu a própria floricultura. E é em um dos terraços de Boston que ela conhece Ryle, um neurocirurgião confiante, teimoso e talvez até um pouco arrogante, com uma grande aversão a relacionamentos, mas que se sente muito atraído por ela.",
+          "category": "Literatura e Ficcção",
+          "description": "Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do  (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum,  vem de uma linha na seção 1.10.32.",
+          "img": "/assets/images/assim_.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Elina Batista",
+      "password": "R23s!@as",
+      "email": "elina@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Elina Batista",
+      "password": "Ln@123456",
+      "email": "elina@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Elina Batista",
+      "password": "Ln@12345",
+      "email": "elinabatista@capgemini.com",
+      "id": 3
+    },
+    {
+      "name": "Elina Maria",
+      "password": "Ln@12345",
+      "email": "elinabatista@capgemini.com",
+      "id": 4
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "category": "Leitura e Ficcção"
+    },
+    {
+      "id": 2,
+      "category": "Ciências"
+    },
+    {
+      "id": 3,
+      "category": "tecnologia"
+    }
+  ],
   "books": [
     {
       "id": 1,
       "title": "É Assim que Acaba:",
       "author": "Colleen Hoover",
-       "img": "/assets/images/coisas.jpg"
+      "pages": 368,
+      "summary": "",
+      "category": 1,
+      "img": "/assets/images/coisas.jpg"
     },
     {
       "id": 2,
       "title": "Antes que o café esfrie",
       "author": "Toshikazu Kawaguchi",
-       "img": "/assets/images/cafe.jpg"
+      "pages": 268,
+      "summary": "Se fosse possível viajar no tempo, quem você gostaria de encontrar? “Embora seja um livro ambientado no Japão, os temas que exploro são universais – amor, perda, recordações, amizade, gratidão, arrependimento e redenção.”",
+      "category": 1,
+      "img": "/assets/images/cafe.jpg"
     },
-    {"id": 3,
+    {
+      "id": 3,
       "title": "O sol é para todos",
       "author": "Harper Lee",
-       "img":"/assets/images/sol.jpg"
+      "pages": 349,
+      "summary": "Um dos maiores clássicos da literatura mundial. O sol é para todos ganhou o Prêmio Pulitzer em 1961 e deu origem a um filme homônimo, vencedor do Oscar de melhor roteiro adaptado, em 1962. Lançado pela primeira vez em 1960, até hoje vende mais de um milhão de cópias por ano em língua inglesa. Uma história atemporal sobre tolerância, perda da inocência e conceito de justiça. ",
+      "category": 1,
+      "description": "Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do  (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum,  vem de uma linha na seção 1.10.32.",
+      "img": "/assets/images/sol.jpg"
     },
-    {"id": 4,
+    {
+      "id": 4,
       "title": "O Homem de Giz",
       "author": "C. J. Tudor",
-       "img": "/assets/images/giz.jpg"
+      "pages": 272,
+      "summary": "Em 1986, Eddie e os amigos passam a maior parte dos dias andando de bicicleta pela pacata vizinhança em busca de aventuras. Os desenhos a giz são seu código secreto: homenzinhos rabiscados no asfalto; mensagens que só eles entendem. Mas um desenho misterioso leva o grupo de crianças até um corpo desmembrado e espalhado em um bosque.",
+      "category": 1,
+      "img": "/assets/images/giz.jpg"
     },
-    {"id": 5,
-      "title": "É Assim que Acaba:",
-      "author": "Colleen Hoover",
-       "img": "/assets/images/assim_.jpg"
+    {
+      "id": 5,
+      "title": "Ideias para adiar o fim do mundo",
+      "author": "Ailton KrenakColleen Hoover",
+      "pages": 104,
+      "summary": "Ailton Krenak nasceu na região do vale do rio Doce, um lugar cuja ecologia se encontra profundamente afetada pela atividade de extração mineira. Neste livro, o líder indígena critica a ideia de humanidade como algo separado da natureza, uma “humanidade que não reconhece que aquele rio que está em coma é também o nosso avô”.",
+      "category": 2,
+      "img": "/assets/images/mundo.jpg"
     },
-    {"id": 6,
-      "title": "O poder do silêncio",
-      "author": "Eckhart Tolle",
-       "img": "/assets/images/silencio.jpg"
+    {
+      "id": 6,
+      "title": " Uma breve história...",
+      "author": "Yuval Noah Harari",
+      "pages": 472,
+      "summary": "O planeta Terra tem cerca de 4,5 bilhões de anos. Numa fração ínfima desse tempo, uma espécie entre incontáveis outras o dominou: nós, humanos. Somos os animais mais evoluídos e mais destrutivos que jamais viveram.",
+      "category": 2,
+      "description": "Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do  (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum,  vem de uma linha na seção 1.10.32.",
+      "img": "/assets/images/humanidade.jpg"
     },
     {
       "id": 7,
-      "title": "É Assim que Acaba:",
-      "author": "Colleen Hoover",
-       "img": "/assets/images/coisas.jpg"
+      "title": "Código limpo:...",
+      "author": "Robert C. Martin",
+      "pages": 425,
+      "summary": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de desenvolvimento. Perdem-se a cada ano horas incontáveis e recursos importantes devido a um código mal escrito. Mas não precisa ser assim",
+      "category": 3,
+      "description": "Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do  (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum,  vem de uma linha na seção 1.10.32.",
+      "img": "/assets/images/codigo.jpg"
     },
     {
       "id": 8,
-      "title": "Antes que o café esfrie",
-      "author": "Toshikazu Kawaguchi",
-       "img": "/assets/images/cafe.jpg"
+      "title": "Storytelling com dados:",
+      "author": "Cole Nussbaumer Knaflic",
+      "pages": 256,
+      "summary": "Storytelling com Dados é admiravelmente bem escrito, uma amostra magistral de rara arte no mundo dos negócios. Cole Nussbaumer Knaflic possui uma habilidade única - um dom - em contar histórias usando dados. No JP Morgan Chase, ela ajudou a melhorar nossa capacidade de explicar análises complicadas para a gerência executiva e para os reguladores com quem trabalhamos.",
+      "category": 3,
+      "description": "Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do  (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum,  vem de uma linha na seção 1.10.32.",
+      "img": "/assets/images/cafe.jpg"
     },
-    {"id": 9,
-      "title": "O sol é para todos",
-      "author": "Harper Lee",
-       "img":"/assets/images/sol.jpg"
+    {
+      "id": 9,
+      "title": "Storytelling com dados:",
+      "author": "Cole Nussbaumer Knaflic",
+      "pages": 256,
+      "summary": "“Storytelling com Dados é admiravelmente bem escrito, uma amostra magistral de rara arte no mundo dos negócios. Cole Nussbaumer Knaflic possui uma habilidade única - um dom - em contar histórias usando dados. No JP Morgan Chase, ela ajudou a melhorar nossa capacidade de explicar análises complicadas para a gerência executiva e para os reguladores com quem trabalhamos.",
+      "category": 3,
+      "img": "/assets/images/dados.jpg"
     },
-    {"id": 10,
-      "title": "O Homem de Giz",
+    {
+      "id": 10,
+      "title": "Arquitetura limpa:",
+      "author": "Robert C. Martin",
+      "pages": 432,
+      "summary": "As regras universais de arquitetura de software aumentam dramaticamente a produtividade dos desenvolvedores ao longo da vida dos sistemas de software. Agora, aproveitando o sucesso dos seus best-sellers Código Limpo e O Codificador Limpo, o lendário artesão de software Robert C. Martin (“Uncle Bob”) vai revelar essas regras e ajudar o leitor a aplicá-las.",
+      "category": 3,
+      "img": "/assets/images/arquitetura.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Python:",
+      "author": "Nilo Ney Coutinho Menezes",
+      "pages": 328,
+      "summary": "Este livro é orientado ao iniciante em programação. Os conceitos básicos de programação, como expressões, variáveis, repetições, decisões, listas, dicionários, conjuntos, funções, arquivos, classes, objetos e banco de dados com SQLite 3 são apresentados um a um com exemplos e exercícios. A obra visa a explorar a programação de computadores como ferramenta do dia a dia.",
+      "category": 3,
+      "img": "/assets/images/phyton.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Algoritmos",
+      "author": "Marco A. Furlan de Souza ",
+      "pages": 304,
+      "summary": "Com linguagem simples e didática – sem, no entanto, fugir da complexidade do assunto –, o livro procura tornar prática a lógica de programação, além de mostrar aos estudantes um caminho mais adequado na construção dos algoritmos. O desenvolvimento do raciocínio lógico e da abstração de procedimentos e dados são as maiores dificuldades para os estudantes dos cursos introdutórios.",
+      "category": 3,
+      "img": "/assets/images/logica.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Estruturas de Dados..",
+      "author": "Loiane Groner ",
+      "pages": 408,
+      "summary": "Uma estrutura de dados é uma maneira particular de organizar dados em um computador com o intuito de usar os recursos de modo eficaz. As estruturas de dados e os algoritmos são a base de todas as soluções para qualquer problema de programação. Com este livro, você aprenderá a escrever códigos complexos e eficazes usando os recursos mais recentes da ES 2017.",
+      "category": 3,
+      "img": "/assets/images/js.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Java para leigos",
+      "author": "Barry Burd",
+      "pages": 424,
+      "summary": "Escrito por uma das maiores referências da programação, Barry Burd, o Java Para Leigos, Tradução da 5ª Edição, traz informações atualizadas sobre linguagens de programação, o básico da programação orientada a objetos, direcionamentos de como criar aplicativos utilizando o JDK7, reutilizar códigos e mais!Este livro é dedicado para programadores inciantes e experientes e, até mesmo, pessoas curiosas que querem entender um pouco mais a respeito do tema.",
+      "category": 3,
+      "img": "/assets/images/java.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Java efetivo:...",
       "author": "C. J. Tudor",
-       "img": "/assets/images/giz.jpg"
+      "pages": 432,
+      "summary": "O Guia Definitivo das Melhores Práticas com Java ― Atualizado para o Java 7, 8 e 9 Desde a publicação anterior de Java Efetivo, após o lançamento da versão 6, o Java mudou radicalmente. Este clássico vencedor do prêmio Jolt foi todo atualizado para aproveitar ao máximo os recursos mais recentes da plataforma e de suas bibliotecas",
+      "category": 3,
+      "img": "/assets/images/efetivo.jpg"
     },
-    {"id": 11,
-      "title": "É Assim que Acaba:",
-      "author": "Colleen Hoover",
-       "img": "/assets/images/assim_.jpg"
-    },
-    {"id": 12,
-      "title": "O poder do silêncio",
-      "author": "Eckhart Tolle",
-       "img": "/assets/images/silencio.jpg"
+    {
+      "id": 16,
+      "title": "Use a cabeça!: Java",
+      "author": "Bert Bates",
+      "pages": 496,
+      "summary": "Use a Cabeça! Java é uma experiência completa de aprendizado em programação orientada a objetos (OO) e Java. Projetado de acordo com princípios de aprendizado simples, este livro mostrará de aspectos básicos da linguagem a tópicos avançados que incluem segmentos, soquetes de rede e programação distribuída",
+      "category": 3,
+      "img": "/assets/images/cabeca.jpg"
     }
   ]
 }

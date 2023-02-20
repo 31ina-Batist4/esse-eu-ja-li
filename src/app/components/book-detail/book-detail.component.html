@@ -1,1 +1,55 @@
-<p>book-detail works!</p>
+<!--div-- class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
+fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+
+<div fxFlex="40" cols="2" rowHeight="450px" >
+    <mat-card class="img-book" >
+        <img src={{livro.img}} height="300px">
+        <mat-card-content>
+          <mat-card-header *ngIf="livro" >
+            <mat-card-title>
+                <h3>{{ livro.title }}</h3>
+            </mat-card-title>
+            <mat-card-subtitle>
+              {{livro.author}}
+            </mat-card-subtitle>
+          </mat-card-header>
+          <p>{{ livro.pages }} páginas</p>
+          <p matLine>{{ livro.summary }}</p>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="goBack()">
+                <span class="fa fa-chevron-left fa-lg"></span>
+            </button>
+
+            <button type="button" class="btn btn-danger" *ngIf="lido" (click)="onClick()">Marcar como lido</button>
+            <button type="button" class="btn btn-success" *ngIf="!lido" >Lido</button>
+            <span class="flex-spacer"></span>
+        </mat-card-actions>
+    </mat-card>
+  </div>
+</!--div-->
+<mat-card class="example-card" *ngIf="livro" >
+  <mat-card-header>
+    <mat-card-title>{{ livro.title }}</mat-card-title>
+    <mat-card-subtitle>{{livro.author}}</mat-card-subtitle>
+    <mat-card-subtitle>{{ livro.pages }} páginas</mat-card-subtitle>
+  </mat-card-header>
+  <img src={{livro.img}} height="300px">
+  <mat-card-content>
+    <p matLine>
+      {{ livro.summary }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="goBack()">
+      <span class="fa fa-chevron-left fa-lg"></span>
+  </button>
+    <button type="button" class="btn btn-danger" *ngIf="lido" (click)="onClick()">Marcar como lido</button>
+    <button type="button" class="btn btn-success" *ngIf="!lido" >Lido</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+

@@ -1,0 +1,18 @@
+.row{
+ width: 80%;
+ height: 4rem;
+ margin-left: 6rem;
+  border-radius: 40px;
+  align-items: center;
+  border: 2px solid rgb(255, 252, 252);
+  background-color: rgb(245, 244, 244);
+
+  margin-bottom: 0.5rem;
+}
+
+img{
+  border: 5px solid #ffc300;
+  border-radius: 50%;
+  width: 50px;
+}
+
