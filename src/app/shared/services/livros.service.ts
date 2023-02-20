@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Livro } from './../model/livro'
 import { baseURL } from './../model/baseurl';
-import { Observable, take } from 'rxjs';
+import { map, Observable, take } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +14,18 @@ export class LivrosService {
 
   constructor(private http: HttpClient) { }
 
-
-getBook(): Observable<Livro[]>{
-  return this.http.get<Livro[]>(`${baseURL}books`).pipe(take(1))
+getBooks(): Observable<Livro[]>{
+  return this.http.get<Livro[]>(`${baseURL}books`).pipe(take(1));
+}
+getBook(id: string): Observable<Livro>{
+  return this.http.get<Livro>(`${baseURL}books/${id}`).pipe(take(1));
+}
+getOne(): Observable<Livro[]>{
+  return this.http.get<Livro[]>(`${baseURL}books`).pipe(take(1));
+}
+getBookId(): Observable<string[] | any> {
+  return this.getBooks().pipe(map(books => books.map(book => book.id)))
+  .pipe(take(1));
 }
 
 }

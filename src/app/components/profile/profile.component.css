@@ -1,0 +1,8 @@
+.example-card{
+  margin-top: 5rem;
+  width: 300px;
+}
+.container {
+display: flex;
+justify-content: center;
+}

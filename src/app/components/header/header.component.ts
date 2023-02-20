@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog } from '@angular/material/dialog';
+import {LoginComponent} from './../login/login.component';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog, private authService: AuthService) { }
 
-  ngOnInit(): void {
+  userLogger: boolean = false;
+
+  ngOnInit(){
+    this.authService.userLogger.subscribe(
+      show  => this.userLogger = show
+    );
   }
+  openDialog() {
+    this.dialog.open(LoginComponent, {width:'415px', height:'340px'});
+
+  }
+
 
 }

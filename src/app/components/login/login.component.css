@@ -1,0 +1,29 @@
+.form-control{
+  font-size: 11px;
+}
+.form{
+  margin-top: 1rem;
+}
+.btn{
+  margin-right: 0.5rem;
+}
+.text-black {
+  color: rgb(68, 67, 67)!important;
+  text-align: center;
+  font-size: 10px;
+}
+svg{
+  color: #b8b4b4;
+}
+.text-yellow {
+  color: #daa804;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+ text-decoration: none;
+ font-weight: 100;
+}
+.form-label{
+  letter-spacing: 0.32px;
+  font-size: 10px;
+}
+

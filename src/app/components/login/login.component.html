@@ -1,0 +1,73 @@
+
+ <mat-panel-title class="modal-title"><h2>Login</h2></mat-panel-title>
+<mat-divider></mat-divider>
+<mat-dialog-content class="mat-typography">
+  <form class="form-horizontal" [formGroup]="loginForm" >
+    <!--Input email-->
+    <div class="mb-3 font-default" >
+      <label for="email" class="form-label">Email</label>
+      <div class="input-group mb-3 bg-light">
+        <span
+          class="input-group-text bg-light none"
+          id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg"
+           width="16" height="16" fill="currentColor"
+          class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+          </svg>
+        </span>
+        <input
+          type="email"
+          class="form-control none"
+          aria-describedby="basic-addon1"
+          placeholder="seuemail@gmail.com"
+          aria-label="email"
+          formControlName="email"/>
+      </div>
+
+    </div>
+
+    <!--Input  password-->
+    <div class="mb-3 font-default">
+      <label for="formFile" class="form-label">Password</label>
+      <div class="input-group mb-3 bg-light">
+        <span
+          class="input-group-text bg-light none"
+          id="basic-addon2"
+          type="button"
+          (click)="hide = !hide">
+          <svg *ngIf="hide" xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16"
+          fill="currentColor"
+          class="bi bi-eye-fill" viewBox="0 0 16 16">
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+          </svg>
+          <svg *ngIf="!hide" xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16" fill="currentColor"
+          class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+            <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+            <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+          </svg>
+        </span>
+        <input
+          [type]="hide ? 'password' : 'text'"
+          type="password"
+          class="form-control none"
+          placeholder="*********"
+          aria-label="password"
+          aria-describedby="basic-addon1"
+          formControlName="password"
+
+        />
+      </div>
+    </div>
+  </form>
+</mat-dialog-content>
+<h4 class="text-black">Não tem Cadastro? <a class="text-yellow" href="/signup">Cadastre-se aqui.</a></h4>
+<div mat-dialog-actions align="end">
+  <button class="btn btn-warning me-md-2" type="submit"(click)="login()" >
+  Signin
+  </button>
+  <button class="btn btn-light" type="button" mat-dialog-close>CANCEL</button>
+</div>
+
