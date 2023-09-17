@@ -17,7 +17,7 @@ export class LivrosService {
 getBooks(): Observable<Livro[]>{
   return this.http.get<Livro[]>(`${baseURL}books`).pipe(take(1));
 }
-getBook(id: string): Observable<Livro>{
+getBook(id: number): Observable<Livro>{
   return this.http.get<Livro>(`${baseURL}books/${id}`).pipe(take(1));
 }
 getOne(): Observable<Livro[]>{

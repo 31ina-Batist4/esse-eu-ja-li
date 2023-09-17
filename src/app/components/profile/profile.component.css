@@ -1,8 +1,13 @@
-.example-card{
+.card{
   margin-top: 5rem;
-  width: 300px;
+  margin-right: 1rem;
+  width: 350px;
 }
 .container {
 display: flex;
 justify-content: center;
+align-items: center;
+}
+span {
+  font-size: 18px;
 }

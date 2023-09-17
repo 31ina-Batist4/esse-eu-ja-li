@@ -1,34 +1,48 @@
+import { User } from 'src/app/shared/model/user';
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { take } from 'rxjs';
-import { UserAuth } from '../model/userAuth';
+import { Observable, take } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
 
-  private userAuth = false;
- userEmail = '';
+  private autenticado: boolean = false;
+  user: User;
+  emailUser: string;
   userLogger = new EventEmitter<boolean>();
-private readonly API = 'http://localhost:3000/'
-  constructor(private router: Router, private http: HttpClient) { }
+  private readonly API = 'http://localhost:3000/users';
 
-  auth(user: UserAuth){
+  constructor(private router: Router, private http: HttpClient) {}
+
+  auth(user: User): Observable<boolean> | boolean {
     if(user.email === 'elinabatista@gmail.com' &&
-       user.password === 'Ln!12345' ) {
-        this.userEmail = user.email;
-      this.userAuth = true;
-      this.userLogger.emit(true);
-      this.router.navigate(['/'])
-    } else {
-      this.userAuth = false;
-      this.userLogger.emit(false);
-    }
+       user.password === 'Ln!12345') {
+       this.autenticado = true;
+       this.userLogger.emit(true);
+       this.router.navigate(['/'])
+       return true;
+       } else {
+          this.autenticado = false;
+          this.userLogger.emit(false);
+          return false;
+      }
   }
-  getUser(id: string) {
-   return this.http.get(this.API + 'users/'+ id).pipe(take(1));
+  authUser() {
+    return this.userLogger;
   }
 
+  setId(id: string) {
+    localStorage.setItem('id', id);
+  }
+
+  getUser() {
+    const id = localStorage.getItem('id');
+    if (id) {
+      return id;
+    }
+    return null;
+  }
 }

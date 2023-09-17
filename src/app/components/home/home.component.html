@@ -1,32 +1,30 @@
-<div class="container"
-fxLayout="column"
-fxLayoutGap="10px">
-   <h1 class="alert alert-warning text-center"*ngIf="!userLogger" >Bem vindo a nossa loja, faça login para ver detalhes dos livros!</h1>
-    <div fxFlex>
-        <div>
-            <h3>Os lançamentos mais vendidos</h3>
-            <hr>
-        </div>
+<h1 class="alert alert-warning text-center" *ngIf="!userLogger">
+  Bem vindo a nossa loja, faça login para ver detalhes dos livros!
+</h1>
+<div class="container" fxLayout="column" fxLayoutGap="10px" *ngIf="userLogger">
+  <div fxFlex>
+    <div>
+      <h3 class="text-tema">Os lançamentos mais vendidos</h3>
+      <hr />
     </div>
-    <div fxFlex *ngIf="livro" >
-        <mat-grid-list cols="3" rowHeight="450px">
-            <mat-grid-tile *ngFor="let lv of livro" [routerLink]="['bookdetail/',lv.id]">
-              <mat-card>
-                <mat-card-header>
-                  <mat-card-title>{{ lv.title }}</mat-card-title>
-                  <mat-card-subtitle>{{lv.author}}</mat-card-subtitle>
-                </mat-card-header>
-                  <img height="200px" src={{lv.img}} alt="{{ lv.title }}">
+  </div>
+  <div fxFlex *ngIf="livro">
+    <mat-grid-list cols="3" rowHeight="450px">
+      <mat-grid-tile
+        *ngFor="let lv of livro"
 
-                  <mat-card-actions align="end" *ngIf="userLogger">
-                    <button type="button" class="btn btn-warning">Já li</button>
-                    <a type="button" class="btn btn-dark" [routerLink]="['/bookdetail', lv.id]" >Quero ler</a>
-                  </mat-card-actions>
-                    </mat-card>
-            </mat-grid-tile>
-        </mat-grid-list>
-    </div>
+      >
+       <a type="button" [routerLink]="['/bookdetail', lv.id]">
+        <mat-card >
+          <mat-card-header>
+            <mat-card-title>{{ lv.title }}</mat-card-title>
+            <mat-card-subtitle>{{ lv.author }}</mat-card-subtitle>
+          </mat-card-header>
+          <img height="200px" src="{{ lv.img }}" alt="{{ lv.title }}" />
+
+        </mat-card>
+       </a>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </div>
-
-
-

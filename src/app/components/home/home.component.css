@@ -3,7 +3,25 @@
 margin-top: 2rem;
 }
 
- .btn-warning{
+ .btn{
   font-weight: 500;
   margin-right: 0.5rem;
  }
+ .amber {
+  color: black;
+}
+ .darken-4:hover {
+  color: rgb(251, 248, 248)!important;
+  background-color: rgb(93, 92, 92)!important;
+ }
+ .text-tema{
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+ }
+.alert{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 14rem;
+}

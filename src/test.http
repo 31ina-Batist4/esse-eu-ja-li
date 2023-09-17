@@ -4,3 +4,8 @@
 
 
 
+PATCH http://localhost:3000/users/1 HTTP/1.1
+conten-type: application/json
+{
+  "pontos": 800
+}

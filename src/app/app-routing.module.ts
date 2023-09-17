@@ -4,14 +4,15 @@ import { BookDetailComponent } from './components/book-detail/book-detail.compon
 import { HomeComponent } from './components/home/home.component';
 import { RankingComponent } from './components/ranking/ranking.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { AuthGuard } from './components/guards/auth.guard';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'ranking', component: RankingComponent},
-  {path: 'profile', component: ProfileComponent},
-  {path: 'bookdetail', component: BookDetailComponent},
-  {path: 'bookdetail/:id', component: BookDetailComponent},
-  {path: 'profile', component: ProfileComponent},
+  {path: 'ranking', component: RankingComponent, canActivate: [AuthGuard]},
+  {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
+  {path: 'bookdetail', component: BookDetailComponent, canActivate: [AuthGuard]},
+  {path: 'bookdetail/:id', component: BookDetailComponent, canActivate: [AuthGuard]},
+  {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 

@@ -30,6 +30,8 @@ import {MatInputModule} from '@angular/material/input';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AuthService } from './shared/services/auth.service';
 import { LivrosService } from './shared/services/livros.service';
+import { AuthGuard } from './components/guards/auth.guard';
+import { AlertMessageService } from './shared/services/alert-message.service';
 
 @NgModule({
   declarations: [
@@ -66,6 +68,8 @@ import { LivrosService } from './shared/services/livros.service';
   ],
   providers: [
     AuthService,
+    AlertMessageService,
+    AuthGuard,
     LivrosService
   ],
   entryComponents: [

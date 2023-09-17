@@ -1,4 +1,13 @@
-<mat-list role="list">
-  <mat-list-item role="listitem">Item 1</mat-list-item>
-</mat-list>
-
+<div class="container">
+  <ul class="collection" *ngFor="let user of user">
+    <li class="collection-item avatar">
+      <img src="{{ user.img }}" class="circle" />
+      <span class="title">{{ user.name }}</span>
+      <p>
+        {{ user.pontos }} pontos <br />
+        {{ user.trofeus }}
+      </p>
+      <span class="secondary-content">{{ ordernarUser(user) + 1 }}</span>
+    </li>
+  </ul>
+</div>
